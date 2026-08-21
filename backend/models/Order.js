@@ -36,17 +36,26 @@ const orderSchema = new mongoose.Schema(
       type: String,
       default: "Pending",
     },
+    razorpayOrderId: {
+      type: String,
+    },
+
+    razorpayPaymentId: {
+      type: String,
+    },
+
+    razorpayOrderId: {
+      type: String,
+    },
+
+    razorpayPaymentId: {
+      type: String,
+    },
 
     status: {
       type: String,
       default: "Pending",
-      enum: [
-        "Pending",
-        "Processing",
-        "Shipped",
-        "Delivered",
-        "Cancelled",
-      ],
+      enum: ["Pending", "Processing", "Shipped", "Delivered", "Cancelled"],
     },
 
     deliveredAt: {
@@ -57,45 +66,30 @@ const orderSchema = new mongoose.Schema(
       type: Date,
     },
     shippingAddress: {
+      address: {
+        type: String,
+      },
 
-  address: {
+      city: {
+        type: String,
+      },
 
-    type: String,
+      state: {
+        type: String,
+      },
 
-  },
+      pincode: {
+        type: String,
+      },
 
-  city: {
-
-    type: String,
-
-  },
-
-  state: {
-
-    type: String,
-
-  },
-
-  pincode: {
-
-    type: String,
-
-  },
-
-  phone: {
-
-    type: String,
-
-  },
-
-},
+      phone: {
+        type: String,
+      },
+    },
   },
   {
     timestamps: true,
-  }
+  },
 );
 
-module.exports = mongoose.model(
-  "Order",
-  orderSchema
-);
+module.exports = mongoose.model("Order", orderSchema);
