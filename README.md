@@ -1,7 +1,7 @@
 # 🛒 ShopHub - Full-Stack E-Commerce Platform
 
 <p align="center">
-  <img src="./assets/shophub-banner.png" alt="ShopHub E-Commerce Banner" width="100%">
+  <img src="./assets/banner.png" alt="ShopHub E-Commerce Banner" width="100%">
 </p>
 
 <p align="center">
@@ -116,7 +116,8 @@ ShopHub supports complete order management for customers and administrators.
 - Update order status
 - Manage order workflow
 - Track order progress
-
+  
+---
 ### Order Status
 
 ```text
@@ -127,8 +128,12 @@ Processing
 Shipped
    ↓
 Delivered
+```
 
-💳 Online Payment
+---
+# 💳 Online Payment
+
+```text
 
 ShopHub currently integrates Razorpay Test Mode for online payments.
 
@@ -143,11 +148,11 @@ Payment Status Tracking
 Secure Server-side Verification
 Automatic Order Creation
 Automatic Cart Clearing after successful payment
-
-🔄 Razorpay Payment Flow
+```
+# 🔄 Razorpay Payment Flow
 
 The payment process follows a secure server-side verification flow.
-
+```text
                     User
                       |
                       | Click "Pay Online"
@@ -187,9 +192,10 @@ The payment process follows a secure server-side verification flow.
                       |
                       ↓
                 Orders Page
-
+```
+---
 Payment Security
-
+---
 ShopHub does not trust the frontend alone to determine whether a payment was successful.
 
 The backend verifies the Razorpay payment signature using the secret key.
@@ -200,9 +206,11 @@ razorpay_order_id
         +
 razorpay_payment_id
         +
-RAZORPAY_KEY_SECRET     
+RAZORPAY_KEY_SECRET  
 
-👤 User Profile
+---
+
+# 👤 User Profile
 
 Users can manage their personal and shipping information.
 
@@ -218,10 +226,12 @@ Shipping information
 
 Shipping information is used when creating orders.
 
-👨‍💼 Admin Dashboard
+---
+
+# 👨‍💼 Admin Dashboard
 
 ShopHub includes a protected admin dashboard.
-
+---
 Admin Features
 Product management
 Add products
@@ -232,7 +242,10 @@ Order management
 Update order status
 Admin-only routes
 Protected admin operations
-🎨 Modern UI
+---=
+
+---
+# 🎨 Modern UI
 
 ShopHub provides a responsive shopping experience across desktop and mobile devices.
 
@@ -252,6 +265,9 @@ Admin dashboard
 Toast notifications
 Responsive layouts
 Clean modern design
+
+---
+```text
 🏗️ Tech Stack
 Frontend
 React
@@ -279,7 +295,11 @@ GitHub
 VS Code
 Postman
 Nodemon
-🏛️ Architecture
+```
+
+# 🏛️ Architecture
+
+```text
                          ┌──────────────────────┐
                          │       ShopHub        │
                          │   React Frontend     │
@@ -299,7 +319,10 @@ Nodemon
       │   MongoDB     │     │   Cloudinary  │     │   Razorpay    │
       │     Atlas     │     │     Media     │     │  Test Mode    │
       └───────────────┘     └───────────────┘     └───────────────┘
+```
+
 📂 Project Structure
+```text
 ShopHub-Ecommerce/
 │
 ├── assets/
@@ -398,8 +421,10 @@ ShopHub-Ecommerce/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
 
 🚀 Current Features
+```text
 | Feature                   | Status |
 | ------------------------- | :----: |
 | User Registration         |    ✅   |
@@ -430,7 +455,9 @@ ShopHub-Ecommerce/
 | Mobile-Friendly UI        |    ✅   |
 | Production Deployment     |   🚧   |
 
+```
 🔐 Environment Variables
+```text
 
 Environment variables are required for both local development and production deployment.
 
@@ -450,8 +477,9 @@ RAZORPAY_KEY_SECRET=razorpay_test_key_secret
 
 Frontend
 VITE_API_URL=http://localhost:5000/api
-
-Production Architecture
+```
+# Production Architecture
+```text
                          Internet
                             |
                             ↓
@@ -472,8 +500,10 @@ Production Architecture
              ┌─────────────┼─────────────┐
              ↓             ↓             ↓
        MongoDB Atlas   Cloudinary    Razorpay
+```
 
-📊 Project Status       
+# 📊 Project Status       
+```text
 | Feature                 |     Status     |
 | ----------------------- | :------------: |
 | Authentication          |   ✅ Completed  |
@@ -492,11 +522,16 @@ Production Architecture
 | GitHub Repository       |   ✅ Completed  |
 | README Documentation    |   ✅ Completed  |
 | Production Deployment   | 🚧 In Progress |
-
-🤝 Contributing
+```
+# 🤝 Contributing
+```text
 Contributions and suggestions are welcome.
+---
+```
 
-👨‍💻 Developer
+# 👨‍💻 Developer
+
+```text
 Sumit Yadav
 
 B.Tech Computer Science & Engineering
@@ -518,3 +553,4 @@ If you like ShopHub:
 💡 Suggest new features
 
 🤝 Contribute to the project
+```
